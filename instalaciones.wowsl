@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualLightBox>
+    <Gallery version="2.5">
+        <Settings>
+            <AppName>WOW Slider</AppName>
+            <AppUrlS>WOWSlider.com</AppUrlS>
+            <AppVersion>8.7</AppVersion>
+            <AutoPlay>true</AutoPlay>
+            <AutoPlayVideo>false</AutoPlayVideo>
+            <Captions>true</Captions>
+            <CaptionsEffect>parallax</CaptionsEffect>
+            <Controls>true</Controls>
+            <FontSize>14</FontSize>
+            <FullScreen>false</FullScreen>
+            <GalleryName>instalaciones</GalleryName>
+            <GallerySuffix>1</GallerySuffix>
+            <HtmlCharset>UTF-8</HtmlCharset>
+            <ImageAspectRatio>true</ImageAspectRatio>
+            <ImageEffect>cube</ImageEffect>
+            <ImageFillColor>#000000</ImageFillColor>
+            <ImageHeight>360</ImageHeight>
+            <ImageQuality>90</ImageQuality>
+            <ImageShrink2>false</ImageShrink2>
+            <ImageStretch>true</ImageStretch>
+            <ImageTemplate>C:/Program Files (x86)/WOW Slider/templates/backgnd/zippy/</ImageTemplate>
+            <ImageTemplateName>Zippy</ImageTemplateName>
+            <ImageWidth>640</ImageWidth>
+            <Images>true</Images>
+            <JoomlaType>2.5</JoomlaType>
+            <OneLoop>false</OneLoop>
+            <OrderRandom>false</OrderRandom>
+            <PlayPause>true</PlayPause>
+            <Preloader>false</Preloader>
+            <PublishIndex>wowslider.html</PublishIndex>
+            <PublishPreview>true</PublishPreview>
+            <PublishType>file</PublishType>
+            <RelativePath>false</RelativePath>
+            <ShowBullets>1</ShowBullets>
+            <ShowControls>false</ShowControls>
+            <ShowTooltips>1</ShowTooltips>
+            <SizeStyle>1</SizeStyle>
+            <SlideshowDelay>20</SlideshowDelay>
+            <SlideshowDuration>20</SlideshowDuration>
+            <SoundEnable>0</SoundEnable>
+            <SoundFileName></SoundFileName>
+            <StopOnHover>false</StopOnHover>
+            <SwipeSupport>2</SwipeSupport>
+            <TemplateColor>#fff</TemplateColor>
+            <TemplateFont>Khula</TemplateFont>
+            <TemplateName>zippy</TemplateName>
+            <ThumbAlign>bottom</ThumbAlign>
+            <ThumbFormat>jpg</ThumbFormat>
+            <ThumbHeight>48</ThumbHeight>
+            <ThumbQuality>90</ThumbQuality>
+            <ThumbWidth>0</ThumbWidth>
+            <Thumbnails>false</Thumbnails>
+            <TooltipPos>bottom</TooltipPos>
+            <noFrame>0</noFrame>
+        </Settings>
+        <Images RelativePath="false">
+            <Image>
+                <url>G:/ /DAM/TERCER PARCIAL/aplicaciones/app10/imagenes/visor1.JPG</url>
+                <title>visor1</title>
+                <filesize>301421</filesize>
+            </Image>
+            <Image>
+                <url>G:/ /DAM/TERCER PARCIAL/aplicaciones/app10/imagenes/visor2.JPG</url>
+                <title>visor2</title>
+                <filesize>1854756</filesize>
+                <rotate>90</rotate>
+            </Image>
+            <Image>
+                <url>G:/ /DAM/TERCER PARCIAL/aplicaciones/app10/imagenes/visor3.JPG</url>
+                <title>visor3</title>
+                <filesize>307379</filesize>
+            </Image>
+            <Image>
+                <url>G:/ /DAM/TERCER PARCIAL/aplicaciones/app10/imagenes/visor4.JPG</url>
+                <title>visor4</title>
+                <filesize>593851</filesize>
+            </Image>
+            <Image>
+                <url>G:/ /DAM/TERCER PARCIAL/aplicaciones/app10/imagenes/visor5.JPG</url>
+                <title>visor5</title>
+                <filesize>366874</filesize>
+            </Image>
+            <Image>
+                <url>G:/ /DAM/TERCER PARCIAL/aplicaciones/app10/imagenes/visor6.JPG</url>
+                <title>visor6</title>
+                <filesize>289572</filesize>
+            </Image>
+            <Image>
+                <url>G:/ /DAM/TERCER PARCIAL/aplicaciones/app10/imagenes/visor7.JPG</url>
+                <title>visor7</title>
+                <filesize>361639</filesize>
+            </Image>
+            <Image>
+                <url>G:/ /DAM/TERCER PARCIAL/aplicaciones/app10/imagenes/visor8.JPG</url>
+                <title>visor8</title>
+                <filesize>215382</filesize>
+            </Image>
+        </Images>
+    </Gallery>
+</VisualLightBox>

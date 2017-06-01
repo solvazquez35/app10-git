@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualLightBox>
+    <Gallery version="2.5">
+        <Settings>
+            <AppName>WOW Slider</AppName>
+            <AppUrlS>WOWSlider.com</AppUrlS>
+            <AppVersion>8.7</AppVersion>
+            <AutoPlay>true</AutoPlay>
+            <AutoPlayVideo>false</AutoPlayVideo>
+            <Captions>true</Captions>
+            <CaptionsEffect>parallax</CaptionsEffect>
+            <Controls>true</Controls>
+            <FontSize>24</FontSize>
+            <FullScreen>false</FullScreen>
+            <GalleryName>visor2</GalleryName>
+            <GallerySuffix>2</GallerySuffix>
+            <HtmlCharset>UTF-8</HtmlCharset>
+            <ImageAspectRatio>true</ImageAspectRatio>
+            <ImageEffect>blur</ImageEffect>
+            <ImageFillColor>#000000</ImageFillColor>
+            <ImageHeight>360</ImageHeight>
+            <ImageQuality>90</ImageQuality>
+            <ImageShrink2>false</ImageShrink2>
+            <ImageStretch>true</ImageStretch>
+            <ImageTemplate>C:/Program Files (x86)/WOW Slider/templates/backgnd/bootstrap/</ImageTemplate>
+            <ImageTemplateName>Bootstrap</ImageTemplateName>
+            <ImageWidth>640</ImageWidth>
+            <Images>true</Images>
+            <JoomlaType>2.5</JoomlaType>
+            <OneLoop>false</OneLoop>
+            <OrderRandom>false</OrderRandom>
+            <PlayPause>true</PlayPause>
+            <Preloader>false</Preloader>
+            <PublishFileName>J:/ /DAM/TERCER PARCIAL/aplicaciones/app10/wowslider.html</PublishFileName>
+            <PublishIndex>wowslider.html</PublishIndex>
+            <PublishPath>J:/ /DAM/TERCER PARCIAL/aplicaciones/app10</PublishPath>
+            <PublishPreview>true</PublishPreview>
+            <PublishType>file</PublishType>
+            <RelativePath>false</RelativePath>
+            <ShowBullets>1</ShowBullets>
+            <ShowControls>false</ShowControls>
+            <ShowTooltips>1</ShowTooltips>
+            <SizeStyle>1</SizeStyle>
+            <SlideshowDelay>20</SlideshowDelay>
+            <SlideshowDuration>20</SlideshowDuration>
+            <SoundEnable>0</SoundEnable>
+            <SoundFileName></SoundFileName>
+            <StopOnHover>false</StopOnHover>
+            <SwipeSupport>2</SwipeSupport>
+            <TemplateColor>#ffffff</TemplateColor>
+            <TemplateFont>Helvetica Neue</TemplateFont>
+            <TemplateName>bootstrap</TemplateName>
+            <ThumbAlign>bottom</ThumbAlign>
+            <ThumbFormat>jpg</ThumbFormat>
+            <ThumbHeight>48</ThumbHeight>
+            <ThumbQuality>90</ThumbQuality>
+            <ThumbWidth>0</ThumbWidth>
+            <Thumbnails>false</Thumbnails>
+            <TooltipPos>bottom</TooltipPos>
+            <noFrame>0</noFrame>
+        </Settings>
+        <Images RelativePath="false">
+            <Image>
+                <url>J:/ /DAM/TERCER PARCIAL/aplicaciones/app10/imagenes/visor12.JPG</url>
+                <title>visor12</title>
+                <filesize>1407351</filesize>
+            </Image>
+            <Image>
+                <url>J:/ /DAM/TERCER PARCIAL/aplicaciones/app10/imagenes/visor33.JPG</url>
+                <title>visor33</title>
+                <filesize>1483525</filesize>
+            </Image>
+            <Image>
+                <url>J:/ /DAM/TERCER PARCIAL/aplicaciones/app10/imagenes/visor11.JPG</url>
+                <title>visor11</title>
+                <filesize>2242119</filesize>
+            </Image>
+            <Image>
+                <url>J:/ /DAM/TERCER PARCIAL/aplicaciones/app10/imagenes/visor34.JPG</url>
+                <title>visor34</title>
+                <filesize>1072881</filesize>
+            </Image>
+            <Image>
+                <url>J:/ /DAM/TERCER PARCIAL/aplicaciones/app10/imagenes/visor29.JPG</url>
+                <title>visor29</title>
+                <filesize>1918765</filesize>
+            </Image>
+            <Image>
+                <url>J:/ /DAM/TERCER PARCIAL/aplicaciones/app10/imagenes/visor27.JPG</url>
+                <title>visor27</title>
+                <filesize>1753042</filesize>
+            </Image>
+            <Image>
+                <url>J:/ /DAM/TERCER PARCIAL/aplicaciones/app10/imagenes/visor19.JPG</url>
+                <title>visor19</title>
+                <filesize>1270491</filesize>
+            </Image>
+            <Image>
+                <url>J:/ /DAM/TERCER PARCIAL/aplicaciones/app10/imagenes/visor28.JPG</url>
+                <title>visor28</title>
+                <filesize>2019743</filesize>
+            </Image>
+        </Images>
+    </Gallery>
+</VisualLightBox>

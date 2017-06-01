@@ -1,0 +1,900 @@
+﻿<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Proyecto final</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema-app10.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js" type="text/javascript"></script>
+<script src="phonegap.js"></script><!-- necesario*/ -->
+
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine2/style.css" />
+<script type="text/javascript" src="engine2/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine3/style.css" />
+<script type="text/javascript" src="engine3/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+</head> 
+<body onLoad="MM_preloadImages('imagenes/img2.jpg','imagenes/lo2.png','imagenes/visor20.JPG','imagenes/visor33.JPG','imagenes/visor28.JPG','imagenes/visor26.JPG','imagenes/visor15.JPG')"> 
+<div data-role="page" id="Principal" data-theme="b">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Resgresar" data-back-btn-theme="b">
+  <h1> CBTis 16 </h1>
+ </div>
+ 
+<div>
+ <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/visor1.jpg" alt="visor1" title="visor1" id="wows1_0"/></li>
+		<li><img src="data1/images/visor2.jpg" alt="visor2" title="visor2" id="wows1_1"/></li>
+		<li><img src="data1/images/visor3.jpg" alt="visor3" title="visor3" id="wows1_2"/></li>
+		<li><img src="data1/images/visor4.jpg" alt="visor4" title="visor4" id="wows1_3"/></li>
+		<li><img src="data1/images/visor5.jpg" alt="visor5" title="visor5" id="wows1_4"/></li>
+		<li><img src="data1/images/visor6.jpg" alt="visor6" title="visor6" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/visor7.jpg" alt="bootstrap slider" title="visor7" id="wows1_6"/></a></li>
+		<li><img src="data1/images/visor8.jpg" alt="visor8" title="visor8" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="visor1"><span><img src="data1/tooltips/visor1.jpg" alt="visor1"/>1</span></a>
+		<a href="#" title="visor2"><span><img src="data1/tooltips/visor2.jpg" alt="visor2"/>2</span></a>
+		<a href="#" title="visor3"><span><img src="data1/tooltips/visor3.jpg" alt="visor3"/>3</span></a>
+		<a href="#" title="visor4"><span><img src="data1/tooltips/visor4.jpg" alt="visor4"/>4</span></a>
+		<a href="#" title="visor5"><span><img src="data1/tooltips/visor5.jpg" alt="visor5"/>5</span></a>
+		<a href="#" title="visor6"><span><img src="data1/tooltips/visor6.jpg" alt="visor6"/>6</span></a>
+		<a href="#" title="visor7"><span><img src="data1/tooltips/visor7.jpg" alt="visor7"/>7</span></a>
+		<a href="#" title="visor8"><span><img src="data1/tooltips/visor8.jpg" alt="visor8"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+</div>
+
+ <div data-role="main" class="ui-content">
+ <div>
+  <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+   <li class="ui-first-child ui-last-child">
+   <a href="#page2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2> Perfil de Egresado  </h2>
+   </a>
+  </li>
+   <li class="ui-first-child ui-last-child">
+   <a href="#page3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Plantel</h2>
+   </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+   <a href="#page4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Requisitos</h2>
+   </a>
+  </li>
+    <li class="ui-first-child ui-last-child">
+   <a href="#page5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Ofertas Educativas</h2>
+   </a>
+  </li>
+   <li class="ui-first-child ui-last-child">
+   <a href="#page6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Servicios Escolares</h2>
+   </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+   <a href="#page7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2> Estudiantes </h2>
+   </a>
+  </li>
+   <li class="ui-first-child ui-last-child">
+   <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2> Docentes</h2>
+   </a>
+  </li>
+   <li class="ui-first-child ui-last-child">
+   <a href="#page9" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2> Vinculacion</h2>
+   </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+   <a href="#page14" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2> Datos del desarrollador</h2>
+   </a>
+  </li>
+ </ul>
+   </div>
+</div>
+
+ <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+   <h4> PROYECTO FINAL </h4>
+    <h4> Vazquez Rangel Maria del sol </h4>
+   <img src="res/android/mdpi.png" width="56" height="46">
+ </div>
+</div>
+
+<div data-role="page" id="page2" data-theme="b">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>Perfil de egreso</h1>
+    </div>
+    <p align="center">El Centro de Bachillerato Tecnológico industrial y de servicios No.16 es una institución de Educación Tecnológica de Nivel Medio Superior dependiente de la Dirección General de Educación Tecnológica Industrial, que imparte educación con carácter bivalente, pues es propedéutico terminal. Lo cual significa que el alumno estudia el bachillerato y, al mismo tiempo, como una ventaja adicional, una carrera técnica, que le permite al concluir sus estudios recibir un título de Técnico y además puede ingresar a cualquier institución de nivel superior.</p>
+    
+   
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','imagenes/img2.jpg',1)"><img src="imagenes/visor9.jpg" width="331" height="369" id="Image13"></a>
+<div data-role="footer" align="center" data-theme="b"data-position="fixed">
+     <h4> PROYECTO FINAL </h4>
+    <h4> Vazquez Rangel Maria del sol </h4>
+   <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+ </div>
+ 
+<div data-role="page" id="page3" data-theme="b">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>Plantel</h1>
+    </div>
+      <div data-role="content" align="center">
+    <div data-role="collapsible" data-content-theme="false">
+              <h1>Mision y Divicion</h1>
+              <div>
+              <br>
+              </div>
+        <div>
+          <ul> 
+          <li><h2> MISION </h2> Formar personas con conocimientos tecnológicos en las áreas industrial, comercial y de servicios, a través de la preparación de profesionales técnicos y bachilleres, con el fin de contribuir al desarrollo sustentable del país.</li>
+          <li><h2> DIVISION </h2> Ser una institución que proporcione una formación integral y pertinente de acuerdo a las exigencias derivadas de la competitividad mundial y el entorno y vocación local, además de tener la flexibilidad para satisfacer los intereses, aspiraciones y posibilidades de la población que demanda este nivel educativo en nuestro plantel.</li>
+      </div>      
+      </div>
+      </div>
+      
+       <div data-role="content" align="center">
+    <div data-role="collapsible" data-content-theme="false">
+              <h1>Ubicacion</h1>
+              <div>
+              <br>
+              </div>
+        <div><img src="imagenes/map.png" width="296" height="382"></div>
+        </div>
+        </div>
+        
+          <div data-role="content" align="center">
+    <div data-role="collapsible" data-content-theme="false">
+              <h1>Historia del plantel</h1>
+              <div>
+              <br>
+              </div>
+        <div>
+        <h2>BREVE RESEÑA HISTORICA DEL C.B.T.i.s. No. 16 </h2>
+         <p align="center">El presente trabajo, tiene como finalidad conocer aspectos sobre la evolución del C.B.T.i.s. No. 16 para lo cual se muestran algunas de sus raíces históricas. El día 08 de Agosto, el comité que representa la Federación de obreros y Campesinos de la región de Atlixco Pué; hizo entrega al Ingeniero Estrada Cuesta en representación del C.A.P.E.C.E., un terreno de 5966.38 metros cuadrados de superficie para la construcción de la Escuela Técnica Industrial No.46 de esta ciudad, procediendo a su edificación. El día 25 de febrero de 1962, en una de las oficinas que forman la H. Cámara de Trabajo C.R.O.M. de Atlixco, empezó a laborar la Dirección de la E.T.I. No. 46., fungiendo como primer Director el C. Ing. Francisco Linares Jiménez, auxiliado por el C. Tec. Oscar Rodríguez Grijalva y el personal administrativo formado por las C. C. Eva Judith Rosas Bonillas, Ma. Cristina Fernández Sosa, Carolina Rosas Zarate y el C. Juan Apatenco Fernández. A los quince días después se hizo el traslado al edificio que ocupa dicha escuela, la cual constaba de 5 salones de clase, 5 talleres y 2 salones de dibujo... </p>
+         
+<div data-role="main" class="ui-content" align="center">
+<div style="width:60%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+<li class="ui-first-child ui-last-child">
+
+
+<li class="ui-first-child ui-last-child">
+<a href="http://cbtis016.edu.mx/index.php/plantel/historia-del-plantel" data-role="button" >
+<h2>Para seguir...</h2>
+</a> 
+
+</li>
+</li>
+</ul>
+</div>
+</div>
+
+         </div>
+        </div>
+        </div>
+      
+    <div data-role="footer" align="center" data-theme="b"data-position="fixed">
+     <h4> PROYECTO FINAL </h4>
+    <h4> Vazquez Rangel Maria del sol </h4>
+   <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+ </div>
+
+<div data-role="page" id="page4" data-theme="b">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>Requisitos</h1>
+    </div>
+    <p align="center"> Requisitos para solicitar la ficha</p>
+    <ul> 
+    <li>Constancia de estudios de ser alumno regular de 3er. Año de secundaria.</li>
+    <li> Una copia de Acta de nacimiento</li>
+    <li>Una copia del CURP (aplicacion tamaño carta</li>
+    <li>Dos fotografias tamaño infantil</li>
+    <li>Copia del IFE de padre o tutor </li>
+    <li>Copia del comprobante de domicilio </li>
+    <li>Costo de la Ficha_________</li>
+    </ul>
+    
+   <p align="center"> Registro de aspirante a partir del 30 de Enero del 2017 hasta el 22 de junio del 2017.
+   En un horario de 9:00 a 13:00 </p>
+   <h2 align="center"> ¡INTEGRATE AL CONOCIMIENTO! </h2>
+   <img src="imagenes/fichas2017.jpg">
+<div data-role="footer" align="center" data-theme="b"data-position="fixed">
+    <h4> PROYECTO FINAL </h4>
+    <h4> Vazquez Rangel Maria del sol </h4>
+   <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+ </div>
+ 
+<div data-role="page" id="page5" data-theme="b">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>Ofertas Educativas</h1>
+    </div>
+    <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container2">
+<div class="ws_images"><ul>
+		<li><img src="data2/images/visor12.jpg" alt="visor12" title="visor12" id="wows2_0"/></li>
+		<li><img src="data2/images/visor33.jpg" alt="visor33" title="visor33" id="wows2_1"/></li>
+		<li><img src="data2/images/visor11.jpg" alt="visor11" title="visor11" id="wows2_2"/></li>
+		<li><img src="data2/images/visor34.jpg" alt="visor34" title="visor34" id="wows2_3"/></li>
+		<li><img src="data2/images/visor29.jpg" alt="visor29" title="visor29" id="wows2_4"/></li>
+		<li><img src="data2/images/visor27.jpg" alt="visor27" title="visor27" id="wows2_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data2/images/visor19.jpg" alt="http://wowslider.com/" title="visor19" id="wows2_6"/></a></li>
+		<li><img src="data2/images/visor28.jpg" alt="visor28" title="visor28" id="wows2_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="visor12"><span><img src="data2/tooltips/visor12.jpg" alt="visor12"/>1</span></a>
+		<a href="#" title="visor33"><span><img src="data2/tooltips/visor33.jpg" alt="visor33"/>2</span></a>
+		<a href="#" title="visor11"><span><img src="data2/tooltips/visor11.jpg" alt="visor11"/>3</span></a>
+		<a href="#" title="visor34"><span><img src="data2/tooltips/visor34.jpg" alt="visor34"/>4</span></a>
+		<a href="#" title="visor29"><span><img src="data2/tooltips/visor29.jpg" alt="visor29"/>5</span></a>
+		<a href="#" title="visor27"><span><img src="data2/tooltips/visor27.jpg" alt="visor27"/>6</span></a>
+		<a href="#" title="visor19"><span><img src="data2/tooltips/visor19.jpg" alt="visor19"/>7</span></a>
+		<a href="#" title="visor28"><span><img src="data2/tooltips/visor28.jpg" alt="visor28"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wow slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine2/wowslider.js"></script>
+<script type="text/javascript" src="engine2/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+   
+    <div data-role="content" align="center">
+    <div data-role="collapsible" data-content-theme="false">
+              <h1>Logistica</h1>
+              <div>
+              <br>
+              </div>
+        <div>
+          <p align="center">Ofrece las competencias profesionales que permiten al estudiante realizar actividades dirigidas a la administración de bienes, planificando los suministros destinados al almacenamiento de manera manual y electrónica, la organización de los nodos logísticos para el transporte de mercancías, así como proveer los servicios y atención al cliente sobre los movimientos y los costos de la cadena logística.</p>
+        
+        <p align="center"> Para la especialidad de logistica no hay aulas y/o talleres en especifico los estudiantes trabajan en las aulas de clase normal</p>
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image59','','imagenes/visor20.JPG',1)"><img src="imagenes/visor21.JPG" width="288" height="441" id="Image59"></a>
+<div data-role="main" class="ui-content" align="center">
+  <div style="width:80%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+<li class="ui-first-child ui-last-child">
+
+
+<li class="ui-first-child ui-last-child">
+<a href="#page10" class="ui-btn ui-btn-icon-right ui-icon-carat-r"  data-role="button" >
+<h2>Perfil de Egreso</h2>
+</a> 
+</li>
+</li>
+</ul>
+</div>
+</div>
+      </div>      
+      </div>
+      </div>
+      
+      <div data-role="content" align="center">
+    <div data-role="collapsible" data-content-theme="false">
+              <h1>Mecanica</h1>
+              <div>
+              <br>
+              </div>
+        <div>
+          <p align="center">Profesionista que da mantenimiento a los sistemas de transmisión de potencia utilizando las máquinas herramientas convencionales, de control numérico, máquinas de soldar con arco eléctrico y oxigas auxiliándose de los procesos de ajuste de piezas mecánicas.</p>
+          
+          <p align="center"> Para la especialidad de Mecanica se asignan talleres dependiendo el semestre que se este cursando</p>
+          <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image60','','imagenes/visor19.JPG',0)"><img src="imagenes/visor12.JPG" width="308" height="443"id="Image60"></a>
+<div data-role="main" class="ui-content" align="center">
+  <div style="width:80%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+<li class="ui-first-child ui-last-child">
+
+
+<li class="ui-first-child ui-last-child">
+<a href="#page11" class="ui-btn ui-btn-icon-right ui-icon-carat-r"  data-role="button" >
+<h2>Perfil de Egreso</h2>
+</a> 
+</li>
+</li>
+</ul>
+</div>
+</div>
+      </div>      
+      </div>
+      </div>
+      
+      <div data-role="content" align="center">
+    <div data-role="collapsible" data-content-theme="false">
+              <h1>Electricidad</h1>
+              <div>
+              <br>
+              </div>
+        <div>
+          <p align="center">La carrera de Técnico en Electricidad permite al estudiante sustentar la demanda de ocupación de Técnicos Electricistas en el sector productivo y de servicios, capaz de diseñar y realizar instalaciones eléctricas residenciales y comerciales, así como proporcionar mantenimiento a máquinas eléctricas.</p>
+          <p align="center"> Para la especialidad de Electricidad se asignan talleres dependiendo el semestre que se este cursando</p>
+          <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image61','','imagenes/visor33.JPG',1)"><img src="imagenes/visor.JPG" width="308" height="432" id="Image61"></a>
+<div data-role="main" class="ui-content" align="center">
+  <div style="width:80%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+<li class="ui-first-child ui-last-child">
+
+
+<li class="ui-first-child ui-last-child">
+<a href="#page12" class="ui-btn ui-btn-icon-right ui-icon-carat-r"  data-role="button" >
+<h2>Perfil de Egreso</h2>
+</a> 
+</li>
+</li>
+</ul>
+</div>
+</div>
+      </div>      
+      </div>
+      </div>
+      
+      <div data-role="content" align="center">
+    <div data-role="collapsible" data-content-theme="false">
+              <h1>Programacion</h1>
+              <div>
+              <br>
+              </div>
+        <div>
+          <p align="center">Persona con conocimientos, habilidades y actitudes, capaz de ingresar a empresas de desarrollo de software, diseño gráfico, mantenimiento, outsourcing.</p>
+          <p align="center"> Para la especialidad de Programacion se asignan laboratorios de computo dependiendo el semestre que se este cursando</p>
+          <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image62','','imagenes/visor28.JPG',1)"><img src="imagenes/visor29.JPG" width="312" height="434" id="Image62"></a>
+<div data-role="main" class="ui-content" align="center">
+  <div style="width:80%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+<li class="ui-first-child ui-last-child">
+
+
+<li class="ui-first-child ui-last-child">
+<a href="#page13" class="ui-btn ui-btn-icon-right ui-icon-carat-r"  data-role="button" >
+<h2>Perfil de Egreso</h2>
+</a> 
+</li>
+</li>
+</ul>
+</div>
+</div>
+      </div>      
+      </div>
+      </div>
+      
+</div>
+<div data-role="page" id="page6" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>Servicios Escolares</h1>
+    </div>
+<div data-role="content" align="center">
+    <div data-role="collapsible" data-content-theme="false">
+              <h1>Becas</h1>
+              <div>
+              <br>
+              </div>
+        <div>
+          <p align="center">En esta sección se describen los diferentes tipos de becas que otorga la Secretaría de Educación Pública (SEP) a través de la Subsecretaría de Educación Media Superior (SEMS) </p>
+          <ul>
+          <h2>Gobierno Federal</h2>
+          <li> Exelencia Promedio</li>
+          <li> Ingreso </li>
+          <li> Permanencia </li>
+          <li> Salario practicas profecionales </li>
+          <li> Contra el abandono Escolar </li>
+          <h2>Gobierno Estatal</h2>
+          <li> Oportunidades </li>
+          </ul>
+          
+          <div data-role="main" class="ui-content" align="center">
+<div style="width:80%;" >
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+<li class="ui-first-child ui-last-child">
+
+
+<li class="ui-first-child ui-last-child">
+<a href="http://www.cbtis016.edu.mx/index.php/servicios-escolares/becas" data-role="button" >
+<h2>Para mas informacion</h2>
+</a> 
+
+</li>
+</li>
+</ul>
+</div>
+</div>
+
+      </div>      
+      </div>
+</div>
+      
+<div data-role="content" align="center">
+    <div data-role="collapsible" data-content-theme="false">
+              <h1>Difusion Deportiva</h1>
+              <div>
+              <br>
+              </div>
+        <div>
+        <ul>
+<li>Formular tanto el programa de actividades como el cuadro de necesidades de la coordinación y presentarlos al Departamento de Servicios Escolares para lo conducente.</li>
+<li>Realizar eventos deportivos y recreativos que coadyuven a la formación integral del alumno.</li>
+<li>Promover la participación de la comunidad escolar en actividades deportivas organizadas por el plantel.</li>
+<li>Propiciar el intercambio deportivo entre el plantel, la comunidad y otras instituciones de la región.</li>
+<li>Programar y controlar el uso de las instalaciones deportivas del plantel.</li>
+<li>Organizar la integración de los clubes deportivos en el plantel y coordinar las actividades inherentes a los mismos.</li>
+<li>Asesorar a los alumnos en la realización de las actividades deportivas que se efectúen en el plantel.</li>
+<li>Promover la participación de la comunidad escolar en las tareas de mantenimiento, conservación y en su caso, construcción de instalaciones deportivas.</li>
+<li>Proporcionar, en los términos y plazos establecidos, la información que le sea requerida por el Departamento de Servicios Escolares.</li>
+<li>Apoyar las actividades de promoción del plantel para la captación de alumnos de nuevo ingreso.</li>
+<li>Mantener comunicación con las demás áreas del plantel para el mejor desempeño de sus funciones.</li>
+</ul>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image63','','imagenes/visor15.JPG',1)"><img src="imagenes/visor2.JPG" width="283" height="428" id="Image63"></a> </div>      
+      </div>
+      </div>
+     
+<div data-role="content" align="center">
+    <div data-role="collapsible" data-content-theme="false">
+              <h1>Difusion Cultural</h1>
+              <div>
+              <br>
+              </div>
+      <div>
+        <ul>
+        <li>Formular tanto el programa de actividades como el cuadro de necesidades de la coordinación y presentarlos al Departamento de Servicios Escolares para lo conducente.</li>
+        <li>Realizar eventos cívicos, culturales, artísticos y recreativos que coadyuven a la formación integral del alumno.</li>
+<li>Promover la participación de la comunidad escolar en actividades culturales organizadas por el plantel.</li>
+<li>Propiciar el intercambio cultural entre el plantel, la comunidad y otras instituciones de la región.</li>
+<li>Programar y controlar el uso de las instalaciones culturales del plantel.</li>
+<li>Organizar la integración de los clubes culturales en el plantel y coordinar las actividades inherentes a los mismos.</li>
+<li>Asesorar a los alumnos en la realización de las actividades culturales que se efectúen en el plantel.</li>
+<li>Promover la participación de la comunidad escolar en las tareas de mantenimiento, conservación y, en su caso, construcción de instalaciones culturales.</li>
+<li>Proporcionar, en los términos y plazos establecidos, la información que le sea requerida por el Departamento de Servicios Escolares.</li>
+<li>Apoyar las actividades de promoción del plantel para la captación de alumnos de nuevo ingreso.</li>
+<li>Mantener comunicación con las demás áreas del plantel para el mejor desempeño de sus funciones.</li>
+</ul>
+      <img src="imagenes/visor25.JPG" width="305" height="388">
+       </div>
+      </div>
+      </div>
+      
+    <div data-role="footer" align="center" data-theme="b"data-position="fixed">
+    <h4> PROYECTO FINAL </h4>
+    <h4> Vazquez Rangel Maria del sol </h4>
+   <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+ </div>
+
+<div data-role="page" id="page7" data-theme="b">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>Estudiantes</h1>
+    </div>
+      <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container3">
+<div class="ws_images"><ul>
+		<li><img src="data3/images/visor22.jpg" alt="visor22" title="visor22" id="wows3_0"/></li>
+		<li><img src="data3/images/visor3.jpg" alt="visor3" title="visor3" id="wows3_1"/></li>
+		<li><img src="data3/images/visor2.jpg" alt="visor2" title="visor2" id="wows3_2"/></li>
+		<li><img src="data3/images/visor17.jpg" alt="visor17" title="visor17" id="wows3_3"/></li>
+		<li><img src="data3/images/visor4.jpg" alt="visor4" title="visor4" id="wows3_4"/></li>
+		<li><a href="http://wowslider.com/vi"><img src="data3/images/visor7.jpg" alt="slider" title="visor7" id="wows3_5"/></a></li>
+		<li><img src="data3/images/visor18.jpg" alt="visor18" title="visor18" id="wows3_6"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="visor22"><span><img src="data3/tooltips/visor22.jpg" alt="visor22"/>1</span></a>
+		<a href="#" title="visor3"><span><img src="data3/tooltips/visor3.jpg" alt="visor3"/>2</span></a>
+		<a href="#" title="visor2"><span><img src="data3/tooltips/visor2.jpg" alt="visor2"/>3</span></a>
+		<a href="#" title="visor17"><span><img src="data3/tooltips/visor17.jpg" alt="visor17"/>4</span></a>
+		<a href="#" title="visor4"><span><img src="data3/tooltips/visor4.jpg" alt="visor4"/>5</span></a>
+		<a href="#" title="visor7"><span><img src="data3/tooltips/visor7.jpg" alt="visor7"/>6</span></a>
+		<a href="#" title="visor18"><span><img src="data3/tooltips/visor18.jpg" alt="visor18"/>7</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">responsive slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine3/wowslider.js"></script>
+<script type="text/javascript" src="engine3/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+    <h1 align="center"> ¡INTEGRATE AL CONOCIMIENTO! </h1>
+    <div data-role="main" class="ui-content" align="center">
+<div style="width:50%;" >
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+<li class="ui-first-child ui-last-child">
+
+
+<li class="ui-first-child ui-last-child">
+<a href="#page4" data-role="button" >
+<h2>Requisitos</h2>
+</a> 
+
+</li>
+</li>
+</ul>
+</div>
+</div>
+
+
+
+    <div data-role="footer" align="center" data-theme="b"data-position="fixed">
+     <h4> PROYECTO FINAL </h4>
+    <h4> Vazquez Rangel Maria del sol </h4>
+   <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+ </div>
+<div data-role="page" id="page8" data-theme="b">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>Docentes</h1>
+    </div>
+    
+     <div data-role="content" align="center">
+    <div data-role="collapsible" data-content-theme="false">
+              <h1>CALENDARIO DE ACTIVIDADES</h1>
+              <div>
+              <br>
+              </div>
+              <img src="imagenes/calActividades.png" width="311" height="177">
+        <div>
+        </div> 
+        </div>     
+        </div>
+         
+        <div data-role="content" align="center">
+    <div data-role="collapsible" data-content-theme="false">
+              <h1> CALENDARIO DE LA SEP </h1>
+      <div>
+              <br>
+              </div>
+              <img src="imagenes/calSEP.png" width="311" height="177">
+        <div> 
+        </div>
+        </div>
+        </div>
+        
+    <div data-role="main" class="ui-content" align="center">
+<div style="width:50%;" >
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+<li class="ui-first-child ui-last-child">
+
+
+<li class="ui-first-child ui-last-child">
+<a href="http://cosdac.sems.gob.mx/portal/index.php/estudiar-trabajar/programas-de-estudios-vigentes" data-role="button" >
+<h2>Programa de estudios</h2>
+</a> 
+
+</li>
+</li>
+</ul>
+</div>
+</div>
+
+
+    <div data-role="footer" align="center" data-theme="b"data-position="fixed">
+   <h4> PROYECTO FINAL </h4>
+    <h4> Vazquez Rangel Maria del sol </h4>
+   <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+ </div>
+
+<div data-role="page" id="page9" data-theme="b">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>Vinculacion</h1>
+    </div>
+     <div data-role="main" class="ui-content" align="center">
+<div style="width:80%;" >
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+<li class="ui-first-child ui-last-child">
+
+
+<li class="ui-first-child ui-last-child">
+<a href="https://drive.google.com/file/d/0B-Yz_u3SAFZINl9FQlRhNDQ2WGM/view" data-role="button" >
+<h2>convocatoria cedual</h2>
+</a> 
+
+</li>
+</li>
+</ul>
+</div>
+</div>
+
+<div data-role="main" class="ui-content" align="center">
+<div style="width:70%;" >
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+<li class="ui-first-child ui-last-child">
+
+
+<li class="ui-first-child ui-last-child">
+<a href="http://148.207.17.6/informe2016/web/" data-role="button" >
+<h2>portal de informes</h2>
+</a> 
+
+</li>
+</li>
+</ul>
+</div>
+</div>
+
+<div data-role="main" class="ui-content" align="center">
+<div style="width:70%;" >
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+<li class="ui-first-child ui-last-child">
+<a href="http://www.cbtis016.edu.mx/index.php" data-role="button" >
+<h2>CBTis No. 16</h2>
+</a> 
+
+</li>
+</li>
+</ul>
+</div>
+</div>  
+    <div data-role="footer" align="center" data-theme="b"data-position="fixed">
+     <h4> PROYECTO FINAL </h4>
+    <h4> Vazquez Rangel Maria del sol </h4>
+   <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+ </div>
+ 
+<div data-role="page" id="page10" data-theme="b">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>Perfil de egreso LOGISTICA</h1>
+    </div>
+    
+     <div data-role="content" align="center">
+    <div data-role="collapsible" data-content-theme="false">
+              <h1>COMPETENCIAS PROFESIONALES</h1>
+              <div>
+              <br>
+              </div>
+              <img src="imagenes/logica1.png" width="311" height="177">
+        <div>
+        </div> 
+        </div>     
+        </div>
+         
+        <div data-role="content" align="center">
+    <div data-role="collapsible" data-content-theme="false">
+              <h1> MAPA CURRICULAR</h1>
+              <div>
+              <br>
+              </div>
+              <img src="imagenes/logica.png" width="311" height="177">
+        <div> 
+        </div>
+        </div>
+        </div>
+  
+<p align="center"> Durante el proceso de formación de los cinco módulos, el estudiante desarrollara o reforzará las siguientes competencias profesionales:</p>
+    <ul>
+    <li> Supervisa el proceso de suministrio de bienes. </li>
+<li> Apoya el proceso de administración al servicio de almacenaje de bienes. </li>
+ <li>Organiza el transporte de mercancías. </li> 
+<li>Proveve servicio de atencion al cliente sbre los movimientos de logistica. </li><li> Organiza los costos de la cadena logística y de las competencias de productividad y empleabilidad: </li>
+ <li>Atencion al proceso </li>
+<li>Planeación y organización </li>
+<li>Ética profesional </li>
+<li>Comunicación efectiva </li>
+<li>Trabajo en equipo </li>
+<li>Atención al cliente </li>
+<li>Relaciones interpersonales </li>
+    </ul>
+    <p align="center">  OPORTUNIDADES DE INSERCIÓN LABORAL
+
+Nuestro país presenta una amplia diversidad de procesos de producción, desde los que utilizan tecnología moderna, hasta sistemas tradicionales; este hecho contribuye a diversificar las ocupaciones, los Comités interinstitucionales de Formación Profesional decidieron utilizar los siguientes: Sectores industriales, comerciales y de servicios, públicos o privados: Escuelas, constructoras, fábricas, centros comerciales, hospitales, inmobiliarias, hoteles, instituciones de crédito, despachos contables y tiendas de autoservicio. Autoempleo</p>
+<div data-role="footer" align="center" data-theme="b"data-position="fixed">
+     <h4> PROYECTO FINAL </h4>
+    <h4> Vazquez Rangel Maria del sol </h4>
+   <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+ </div>
+
+
+<div data-role="page" id="page11" data-theme="b">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>Perfil de egreso MECANICA</h1>
+    </div>
+    <div data-role="content" align="center">
+    <div data-role="collapsible" data-content-theme="false">
+              <h1>COMPETENCIAS PROFESIONALES</h1>
+              <div>
+              <br>
+              </div>
+              <img src="imagenes/mecanica1.png" width="311" height="177">
+        <div>
+        </div> 
+        </div>     
+        </div>
+         
+        <div data-role="content" align="center">
+    <div data-role="collapsible" data-content-theme="false">
+              <h1> MAPA CURRICULAR</h1>
+              <div>
+              <br>
+              </div>
+              <img src="imagenes/mecanica.png" width="311" height="177">
+        <div> 
+        </div>
+        </div>
+        </div>
+    <p align="center">Durante el proceso de formación de los cinco módulos, el estudiante desarrollará o reforzará las siguientes competencias profesionales, correspondientes al Técnico en Mecánica Industrial:</p>
+    <ul>
+    <li> Suelda y ajusta piezas mecánicas. </li>
+<li>Maquina piezas mecánicas en talador y torno. </li>
+<li>Maquina piezas mecánicas en fresadora, rectificadora y cepillo. </li> 
+<li>Maquina piezas mecánicas por CNC. </li>
+<li> Mantiene sistemas de transmisión de potencia.</li>
+    </ul>
+    <h2>OPORTUNIDADES DE INSERCIÓN LABORAL </h2>
+    <p align="center"> Industrias de transformación y procesos como: Textiles, del plástico, petroleras, metalmecánica, automotriz, pesqueras, mineras, siderúrgicas, agrícolas, alimenticia, química, de muebles, forestal, papelera, gráfica y en general todo tipo de industria de la producción y manufacturera que utilice maquinaria entre otras.
+
+  </p>
+<div data-role="footer" align="center" data-theme="b"data-position="fixed">
+    <h4> PROYECTO FINAL </h4>
+    <h4> Vazquez Rangel Maria del sol </h4>
+   <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+ </div>
+ 
+ <div data-role="page" id="page12" data-theme="b">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>Perfil de egreso ELECTRICIDAD</h1>
+    </div>
+     <div data-role="content" align="center">
+    <div data-role="collapsible" data-content-theme="false">
+              <h1>COMPETENCIAS PROFESIONALES</h1>
+              <div>
+              <br>
+              </div>
+              <img src="imagenes/electricidad1.png" width="311" height="177">
+        <div>
+        </div> 
+        </div>     
+        </div>
+         
+        <div data-role="content" align="center">
+    <div data-role="collapsible" data-content-theme="false">
+              <h1> MAPA CURRICULAR</h1>
+              <div>
+              <br>
+              </div>
+              <img src="imagenes/electricidad.png" width="311" height="177">
+        <div> 
+        </div>
+        </div>
+        </div>
+  
+    <p align="center">Durante el proceso de formación de los cinco módulos, el estudiante desarrollará o reforzará las siguientes competencias profesionales, correspondientes al Técnico en Electricidad.</p>
+    <ul>
+    <li>  Desarrolla instalaciones eléctricas residenciales y comerciales. </li>
+<li>Mantiene los motores y generadores de CA y CC. </li>
+<li>Mantiene en operación los circuitos de control electromagnético y electrónico. </li> 
+<li> Mantiene los sistemas de iluminación y de energía renovable.</li>
+<li>Mantiene instalaciones eléctricas de media y baja tensión. </li>
+    </ul>
+    <h2>OPORTUNIDADES DE INSERCIÓN LABORAL </h2>
+    <p align="center"> Todas estas competencias posibilitan al egresado su incorporación al mundo laboral o desarrollar procesos productivos independientes, de acuerdo con sus intereses profesionales o las necesidades en su entorno social. </p>
+<div data-role="footer" align="center" data-theme="b"data-position="fixed">
+    <h4> PROYECTO FINAL </h4>
+    <h4> Vazquez Rangel Maria del sol </h4>
+   <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+ </div>
+ 
+<div data-role="page" id="page13" data-theme="b">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>Perfil de egreso PROGRAMACION</h1>
+    </div>
+   <div data-role="content" align="center">
+    <div data-role="collapsible" data-content-theme="false">
+              <h1>COMPETENCIAS PROFESIONALES</h1>
+              <div>
+              <br>
+              </div>
+              <img src="imagenes/programacion1.png" width="311" height="177">
+        <div>
+        </div> 
+        </div>     
+        </div>
+         
+        <div data-role="content" align="center">
+    <div data-role="collapsible" data-content-theme="false">
+              <h1> MAPA CURRICULAR</h1>
+              <div>
+              <br>
+              </div>
+              <img src="imagenes/programacion.png" width="311" height="177">
+        <div> 
+        </div>
+        </div>
+        </div>
+        
+  <p align="center">La formación que ofrece la carrera de Técnico en programación permite al egresado, a través de la articulación de saberes de diversos campos, realizar actividades dirigidas a la:</p>
+    <ul>
+    <li> Instalación y desarrollo de software de aplicación utilizando programación estructurada y orientada a objetos en ambientes web y móviles, con almacenamiento persistente de datos. </li>
+<li>Así como la configuración y administración de plataforma e-learning y Comercio electrónico. </li>
+
+    </ul>
+    <h2>OPORTUNIDADES DE INSERCIÓN LABORAL </h2>
+    <li> Desarrolladores de software</li> 
+<li> Analistas de sistemas</li>
+<li>Analista de programas de cómputo </li>
+<li>Programador de sistemas de cómputo </li>
+<li>Edición de software y edición de software integrada con la reproducción </li>
+<li>Escuelas de computación del sector privado </li>
+<li>  Servicios de diseño de sistemas de cómputo y servicios relacionados</li>
+<li>Escuelas de computación del sector público </li>
+   </ul>
+    
+<div data-role="footer" align="center" data-theme="b"data-position="fixed">
+   <h4> PROYECTO FINAL </h4>
+    <h4> Vazquez Rangel Maria del sol </h4>
+   <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+ </div>
+
+<div data-role="page" id="page14" data-theme="b">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>DATOS DEL DESARROLLADOR</h1>
+    </div>
+    <img src="imagenes/yo.jpg" width="188" height="230">
+<h2> Nombre: </h2> <p> VAZQUEZ RANGEL MARIA DEL SOL </p>
+     <h2> Grupo: </h2> <p> F </p>
+    <h2> Nombre del profesor: </h2> <p> Lic. José Antonio Gómez Hernández </p> 
+     <h2> Nombre del submodulo: </h2> <p> Diseña y Aplicaciones Moviles </p>
+    <h2>Nombre de la Aplicacion</h2> <p> Proyecto final </p>
+    <div data-role="footer" align="center" data-theme="b"data-position="fixed">
+    <h4> PROYECTO FINAL </h4>
+    <h4> Vazquez Rangel Maria del sol </h4>
+   <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+ </div>
+ 
+ 
+</body>
+</html>
